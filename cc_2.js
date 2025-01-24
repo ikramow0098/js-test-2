@@ -13,3 +13,13 @@ const average = total / scores.length;
 
 console.log(scores)
 console.log("Average score:", average);
+
+let employee = {
+    name:"John",
+    age:24,
+    department:"IT",
+    isActive:true,
+}
+employee.department = "Finance";
+Object.defineProperty(employee, "position", {value:"Security analyst"})
+console.log(employee)
