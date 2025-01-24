@@ -49,3 +49,14 @@ customers.push(
     },
 )
 console.log(customers)
+
+let order = {
+    orderId: 1,
+    customerName: "John",
+    amount: 123,
+    calculateTax: function () {
+        return this.amount * 0.10; // 10% tax rate
+    }
+}
+console.log(order);
+console.log(order.calculateTax());
